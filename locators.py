@@ -1,61 +1,37 @@
 from selenium.webdriver.common.by import By
 
 # кнопка с вопросом Сколько это стоит? И как оплатить?
-Question_how_to_pay = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div/div/div"]
+Question_how_to_pay = [By.XPATH,"//div[@id='accordion__heading-0']"]
 # кнопка с ответом на вопрос Сколько это стоит? И как оплатить?
 Answer_how_to_pay = [By.XPATH, "//p[contains(text(),'Сутки — 400 рублей. Оплата курьеру — наличными или')]"]
-# текст ответа на Сколько это стоит? И как оплатить?
-text_how_to_pay  = 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'
-
 # кнопка с вопросом Хочу сразу несколько самокатов! Так можно?
-Question_several_scooters = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[2]/div/div"]
+Question_several_scooters = [By.XPATH,"//div[@id='accordion__heading-1']"]
 # кнопка с ответом на вопрос Хочу сразу несколько самокатов! Так можно?
 Answer_several_scooters = [By.XPATH, "//p[contains(text(),'Пока что у нас так: один заказ — один самокат.')]"]
-# текст ответа на Хочу сразу несколько самокатов! Так можно?
-text_several_scooters = 'Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.'
-
 #кнопка с вопросом Как рассчитывается время аренды?
-Question_rental_time_calculated = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[3]/div/div"]
+Question_rental_time_calculated = [By.XPATH,"//div[@id='accordion__heading-2']"]
 #кнопка с ответом на вопрос Как рассчитывается время аренды?
 Answer_rental_time_calculated = [By.XPATH, "//p[contains(text(),'Допустим, вы оформляете заказ на 8 мая.')]"]
-# текст ответа на Как рассчитывается время аренды?
-text_rental_time_calculated = 'Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.'
-
 #кнопка с вопросом Можно ли заказать самокат прямо на сегодня?
-Question_order_scooter_today = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[4]/div/div"]
+Question_order_scooter_today = [By.XPATH,"//div[@id='accordion__heading-3']"]
 #кнопка с ответом на вопрос Можно ли заказать самокат прямо на сегодня?
 Answer_order_scooter_today = [By.XPATH,"//p[contains(text(),'Только начиная с завтрашнего дня.')]"]
-# текст ответа на Можно ли заказать самокат прямо на сегодня?
-text_order_scooter_today = 'Только начиная с завтрашнего дня. Но скоро станем расторопнее.'
-
 #кнопка с вопросом Можно ли продлить заказ или вернуть самокат раньше?
-Question_return_scooter_earlier = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[5]/div/div"]
+Question_return_scooter_earlier = [By.XPATH,"//div[@id='accordion__heading-4']"]
 #кнопка с ответом на вопрос Можно ли продлить заказ или вернуть самокат раньше?
 Answer_return_scooter_earlier = [By.XPATH,"//p[contains(text(),'Пока что нет! Но если что-то срочное')]"]
-# текст ответа на Можно ли продлить заказ или вернуть самокат раньше?
-text_return_scooter_earlier = 'Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.'
-
 #кнопка с вопросом Вы привозите зарядку вместе с самокатом?
-Question_charging_with_scooter = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[6]/div/div"]
+Question_charging_with_scooter = [By.XPATH,"//div[@id='accordion__heading-5']"]
 #кнопка с ответом на Вы привозите зарядку вместе с самокатом?
 Answer_charging_with_scooter = [By.XPATH,"//p[contains(text(),'Самокат приезжает к вам с полной зарядкой.')]"]
-# текст ответа на Вы привозите зарядку вместе с самокатом?
-text_charging_with_scooter = 'Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.'
-
 #кнопка с вопросом Можно ли отменить заказ?
-Question_cancel_order = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[7]/div/div"]
+Question_cancel_order = [By.XPATH,"//div[@id='accordion__heading-6']"]
 #кнопка с ответом на вопрос Можно ли отменить заказ?
 Answer_cancel_order = [By.XPATH,"//p[contains(text(),'Да, пока самокат не привезли.')]"]
-# текст ответа на вопрос Можно ли отменить заказ?
-text_cancel_order = 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.'
-
 #кнопка с вопросом Я жизу за МКАДом, привезёте?
-Question_beyond_MKAD = [By.XPATH,"//div[@class='Home_FAQ__3uVm4']/div/div[8]/div/div"]
+Question_beyond_MKAD = [By.XPATH,"//div[@id='accordion__heading-7']"]
 #кнопка с ответом на вопрос Я жизу за МКАДом, привезёте?
 Answer_beyond_MKAD = [By.XPATH,"//p[contains(text(),'Да, обязательно. Всем самокатов!')]"]
-# текст ответа на вопрос Я жизу за МКАДом, привезёте?
-text_beyond_MKAD = 'Да, обязательно. Всем самокатов! И Москве, и Московской области.'
-
 
 # локаторы для заказов
 
@@ -104,3 +80,5 @@ order_has_been_created = [By.XPATH, "//div[@class='Track_OrderInfo__2fpDL']"]
 skooter_button_header = [By.CLASS_NAME, "Header_LogoScooter__3lsAR"]
 # кнопка яндекса в хедере
 yandex_button_header = [By.CLASS_NAME, "Header_LogoYandex__3TSOI"]
+
+Button_yandex_search = [By.CLASS_NAME, "dzen-desktop__search-37"]
