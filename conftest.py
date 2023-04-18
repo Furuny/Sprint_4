@@ -13,6 +13,3 @@ def driver():
 
     yield driver
     driver.quit()
-
-import pytest
-from selenium import webdriver
